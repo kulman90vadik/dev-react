@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
 import logo from "./images/logo.png";
 import logowebp from "./images/logo-wp.webp";
@@ -12,13 +12,12 @@ const Header = () => {
 
   let preloaderRef = useRef();
 
-  useEffect(() => {
 
-//   window.onload = () => {
+
+  window.onload = (event) => {
+    console.log("page is fully loaded");
     preloaderRef.current.classList.add("preloader--hide");
-//   };
-console.log('rrr');
-   }, []);
+  };
 
   // HEADER ACTIVE
   const headerBurgerHandler = () => {
