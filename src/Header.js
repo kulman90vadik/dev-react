@@ -10,14 +10,12 @@ const Header = () => {
   const headerBurgerRef = useRef();
   const [menuLinks, setMenuLinks] = useState(headerMenuData);
 
-  let preloaderRef = useRef();
+  // let preloaderRef = useRef();
 
-
-
-  window.onload = (event) => {
-    console.log("page is fully loaded");
-    preloaderRef.current.classList.add("preloader--hide");
-  };
+  // window.onload = (event) => {
+  //   console.log("page is fully loaded");
+  //   preloaderRef.current.classList.add("preloader--hide");
+  // };
 
   // HEADER ACTIVE
   const headerBurgerHandler = () => {
@@ -97,7 +95,7 @@ const Header = () => {
         <span aria-hidden="true"></span>
       </button>
 
-      <div id="preloader" className="preloader" ref={preloaderRef}>
+      {/* <div id="preloader" className="preloader" ref={preloaderRef}>
         <div className="preloader__loader">
           <div className="loadingio-spinner-bean-eater-za7vf1w5jfp">
             <div className="ldio-iokivgbuc8i">
@@ -114,7 +112,8 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+
     </header>
   );
 };
