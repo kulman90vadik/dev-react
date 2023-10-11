@@ -22,10 +22,6 @@ const HeaderMenuItem = (props) => {
           block: 'start'
       });
 
-
-
-
-      
   }
 
   return ( 

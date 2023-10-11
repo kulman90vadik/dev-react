@@ -4,13 +4,9 @@ import background from './images/my-photo.jpg';
 import AboutItem from './components/About/AboutItem';
 import aboutItemData from './components/About/aboutItemData';
 
-
-// import './styles/app.css';
-
 const About = () => {
 
   const[aboutItems, setAboutItems] = useState(aboutItemData);
-
 
   return (
     <section className="about section" id="about">
@@ -28,7 +24,7 @@ const About = () => {
             <div className="about__text">
               <p>
                 I'm a Junior Front-End Developer.
-                I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+                I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences...
               </p>
             </div>
           </div>
