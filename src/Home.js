@@ -1,15 +1,47 @@
-import { useRef } from "react";
+import React, { useState, useEffect, useRef } from 'react';
+import BIRDS from 'vanta/dist/vanta.birds.min';
 
-function Home() {
+
+function Home(props) {
 
   let preloaderRef = useRef();
 
   window.onload = () => {
     preloaderRef.current.classList.add('preloader--hide');
   };
-  
+
+  const [vantaEffect, setVantaEffect] = useState(null)
+  const myRef = useRef(null)
+  useEffect(() => {
+    if (!vantaEffect) {
+      setVantaEffect(BIRDS({
+        el: myRef.current,
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0x131314,
+        color1: 0xffd4,
+        color2: 0xb8fc,
+        colorMode: "lerpGradient",
+        birdSize: 0.80,
+        wingSpan: 12.00,
+        speedLimit: 3.00,
+        separation: 32.00,
+        alignment: 37.00,
+        cohesion: 26.00
+      }))
+    }
+    return () => {
+      if (vantaEffect) vantaEffect.destroy()
+    }
+  }, [vantaEffect])
+
   return (
-    <section className="home">
+    <section className="home" ref={myRef}>
       <div className="home__inner">
         <h1 className="home-title">
           <span>Hi,</span>
@@ -18,7 +50,7 @@ function Home() {
         </h1>
       </div>
 
-      <div className="background">
+      {/* <div className="background">
         <div className="background__wrapper">
           <div className="background__item">
             <i className="fa fa-code" aria-hidden="true"></i>
@@ -1053,7 +1085,21 @@ function Home() {
           </div>
 
         </div>
-      </div>
+      </div> */}
+
+      {/* <div className='background'  > */}
+      {/* VANTA.BIRDS({
+        el: "#your-element-selector",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00
+      }) */}
+      {/* </div> */}
+     
 
       <div 
         id="preloader" 
