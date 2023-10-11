@@ -6,13 +6,17 @@ function Home(props) {
 
   let preloaderRef = useRef();
 
-  window.onload = () => {
-    preloaderRef.current.classList.add('preloader--hide');
-  };
-
+  
   const [vantaEffect, setVantaEffect] = useState(null)
   const myRef = useRef(null)
   useEffect(() => {
+    
+    
+    window.onload = () => {
+      preloaderRef.current.classList.add('preloader--hide');
+    };
+
+
     if (!vantaEffect) {
       setVantaEffect(BIRDS({
         el: myRef.current,
