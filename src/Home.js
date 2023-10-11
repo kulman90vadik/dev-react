@@ -1,21 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import BIRDS from 'vanta/dist/vanta.birds.min';
 
-
 function Home(props) {
 
-  let preloaderRef = useRef();
-
-  
   const [vantaEffect, setVantaEffect] = useState(null)
   const myRef = useRef(null)
   useEffect(() => {
     
-    
-    window.onload = () => {
-      preloaderRef.current.classList.add('preloader--hide');
-    };
-
 
     if (!vantaEffect) {
       setVantaEffect(BIRDS({
@@ -1104,30 +1095,6 @@ function Home(props) {
       }) */}
       {/* </div> */}
      
-
-      <div 
-        id="preloader" 
-        className="preloader"
-        ref={preloaderRef}
-        >
-        <div className="preloader__loader">
-          <div className="loadingio-spinner-bean-eater-za7vf1w5jfp">
-            <div className="ldio-iokivgbuc8i">
-              <div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-              <div>
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
     </section>
   );
 }
