@@ -216,6 +216,14 @@
 .home .home-title span {
     display: block;
 }
+.home .home-title.home--hide {
+    transform: translateX(-200%);
+    transition: transform 0.3s ease-in-out;
+}
+.home .home-title.home--show {
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in-out;
+}
 .home .home-title__position {
     color: #111;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);

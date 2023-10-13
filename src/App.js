@@ -14,8 +14,11 @@ const App = () => {
 
   window.onload = () => {
     setLoading(false);
+    
     // preloaderRef.current.classList.add("preloader--hide");
   };
+
+
 
   return (
     <>

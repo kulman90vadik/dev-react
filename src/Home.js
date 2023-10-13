@@ -3,10 +3,13 @@ import BIRDS from "vanta/dist/vanta.birds.min";
 
 function Home(props) {
   const [vantaEffect, setVantaEffect] = useState(null);
+  const [title, setTitle] = useState('home--hide');
   const myRef = useRef(null);
 
-  
-
+  setTimeout(showTitleHandler, 2000);
+  function showTitleHandler() {
+    setTitle('home--show');
+  }
   
   useEffect(() => {
     
@@ -44,7 +47,7 @@ function Home(props) {
 
         <section className="home" ref={myRef}>
           <div className="home__inner">
-            <h1 className="home-title">
+            <h1 className={'home-title ' + title}>
               <span>Hi,</span>
               <span>I'm Vadim,</span>
               <span
