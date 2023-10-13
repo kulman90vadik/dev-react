@@ -212,18 +212,34 @@
 }.home .home-title {
     font-size: 70px;
     font-family: "Julee", sans-serif;
+
 }
 .home .home-title span {
     display: block;
-}
-.home .home-title.home--hide {
     transform: translateX(-200%);
-    transition: transform 0.3s ease-in-out;
+    animation: transformTitle 3s ease-in-out 2s forwards;
 }
-.home .home-title.home--show {
-    transform: translateX(0%);
-    transition: transform 0.3s ease-in-out;
+
+@keyframes transformTitle {
+    0% {
+        transform: translateX(-150%);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    70% {
+        transform: translateX(0%);
+    }
+    90% {
+        transform: translateX(25%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
+
+
+
 .home .home-title__position {
     color: #111;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
