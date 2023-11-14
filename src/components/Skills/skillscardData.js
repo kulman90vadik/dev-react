@@ -2,6 +2,21 @@
 
 const skillscardData = [
     {
+        id: 8,
+        color: '#5cdff6',
+        number: 87,
+        description: 'React',
+        list: [
+            'Redux Toolkit',
+            'useState, useEffect',
+            'useRef, useContext, useCallback',
+            "React Router Dom",
+            "Fetch, Axios",
+            "Loader, Lodash",
+            'JavaScript Fundamentals + ES6'
+        ]
+    },
+    {
         id: 1,
         color: '#43d854',
         number: 96,
@@ -90,19 +105,6 @@ const skillscardData = [
             'Working on the command line',
             'Providing a repository on gh-pages',
             'Create/remove branches'
-        ]
-    },
-    {
-        id: 8,
-        color: '#5cdff6',
-        number: 87,
-        description: 'React',
-        list: [
-            'Redux Toolkit',
-            'useState, useEffect',
-            'useRef, useContext',
-            'JavaScript Fundamentals + ES6',
-            'React / Node.JS'
         ]
     },
     {
