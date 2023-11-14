@@ -46,9 +46,9 @@ function Home(props) {
               <span>I'm Vadim,</span>
               <span
                 className="home-title__position"
-                data-title="Front End Developer"
+                data-title="React front-end developer"
               >
-                Front End Developer
+                React front-end developer
               </span>
             </h1>
           </div>

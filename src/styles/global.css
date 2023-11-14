@@ -282,3 +282,12 @@ body {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
 }
+
+.section {
+    padding-left: 150px;
+}
+@media only screen and (max-width: 992px) {
+    .section {
+        padding-left: 0;
+    }
+}

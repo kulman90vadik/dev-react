@@ -95,13 +95,13 @@ const skillscardData = [
     {
         id: 8,
         color: '#5cdff6',
-        number: 75,
+        number: 87,
         description: 'React',
         list: [
-            'Refs и DOM',
-            'Redux',
+            'Redux Toolkit',
+            'useState, useEffect',
+            'useRef, useContext',
             'JavaScript Fundamentals + ES6',
-            'State',
             'React / Node.JS'
         ]
     },
