@@ -1347,7 +1347,8 @@ to {
     width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    height: 100%;
+    height: auto;
+    min-height: 100%;
     -webkit-transition: -webkit-transform 0.2s ease-out;
     transition: -webkit-transform 0.2s ease-out;
     -o-transition: transform 0.2s ease-out;

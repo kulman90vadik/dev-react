@@ -34,10 +34,18 @@ import ringowebp from '../../images/portfolio/webp/ringo.webp';
 import fogex from '../../images/portfolio/fogex.png';
 import fogexwebp from '../../images/portfolio/webp/fogex.webp';
 
+import branding from '../../images/portfolio/branding.jpg';
 
 
 
 const portfoliocardData = [
+    {
+        id: 13,
+        image: branding,
+        title: 'Branding Workshop',
+        description: 'React, Redux Toolkit',
+        link : 'https://branding-nine.vercel.app/'
+    },
     {
         id: 1,
         image: djr,
