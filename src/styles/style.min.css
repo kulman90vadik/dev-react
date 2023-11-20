@@ -563,27 +563,13 @@
     font-size: 30px;
 }
 }.portfolio {
-    padding: 100px 0 100px 150px;
+    padding: 0px 0 20px 150px;
+}
+
+.portfolio__container {
     background-color: #111;
-    -webkit-clip-path: polygon(50% 5%,  100% 0,  100% 95.5%,  50% 100%,  0 95.5%,  0 0);
+
     clip-path: polygon(50% 5%,  100% 0,  100% 95.5%,  50% 100%,  0 95.5%,  0 0);
-}
-@media only screen and (max-width: 1200px) {
-    .portfolio {
-    -webkit-clip-path: polygon(50% 3%,  100% 0,  100% 97%,  50% 100%,  0 97%,  0 0);
-    clip-path: polygon(50% 3%,  100% 0,  100% 97%,  50% 100%,  0 97%,  0 0);
-}
-@media only screen and (max-width: 992px) {
-    .portfolio {
-        padding: 100px 0;
-    }
-}
-}@media only screen and (max-width: 720px) {
-    .portfolio {
-    -webkit-clip-path: polygon(50% 1.5%,  100% 0,  100% 98.5%,  50% 100%,  0 98.5%,  0 0);
-    clip-path: polygon(50% 1.5%,  100% 0,  100% 98.5%,  50% 100%,  0 98.5%,  0 0);
-}
-}.portfolio__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -595,14 +581,33 @@
     position: relative;
     padding: 20px 15px;
     overflow: hidden;
+    padding-top: 160px;
+    padding-bottom: 45px;
+}
+@media only screen and (max-width: 1200px) {
+    .portfolio__container {
+    -webkit-clip-path: polygon(50% 3%,  100% 0,  100% 97%,  50% 100%,  0 97%,  0 0);
+    clip-path: polygon(50% 3%,  100% 0,  100% 97%,  50% 100%,  0 97%,  0 0);
+}
+@media only screen and (max-width: 992px) {
+    .portfolio {
+        padding: 40px 0;
+    }
+}
+}@media only screen and (max-width: 720px) {
+    .portfolio__container {
+    -webkit-clip-path: polygon(50% 1.5%,  100% 0,  100% 98.5%,  50% 100%,  0 98.5%,  0 0);
+    clip-path: polygon(50% 1.5%,  100% 0,  100% 98.5%,  50% 100%,  0 98.5%,  0 0);
+    padding-top: 90px;
+}
 }
 .skills {
-    padding: 100px 0 100px 150px;
+    padding: 100px 0 40px 150px;
 }
 
 @media only screen and (max-width: 992px) {
     .skills {
-        padding: 100px 0;
+        padding: 40px 0;
     }
 }
 
@@ -877,24 +882,22 @@
 }
 
 
-
-.about {
+.about__container {
+    padding: 100px 15px;
     -webkit-clip-path: polygon(100% 0,  100% 90%,  50% 100%,  0 90%,  0 0);
     clip-path: polygon(100% 0,  100% 90%,  50% 100%,  0 90%,  0 0);
     background-color: #111;
 }
 @media only screen and (max-width: 720px) {
-    .about {
+    .about__container {
     -webkit-clip-path: polygon(100% 0,  100% 96%,  50% 100%,  0 96%,  0 0);
     clip-path: polygon(100% 0,  100% 96%,  50% 100%,  0 96%,  0 0);
 }
 }@media only screen and (max-width: 400px) {
-    .about {
+    .about__container {
     -webkit-clip-path: polygon(100% 0,  100% 98%,  50% 100%,  0 98%,  0 0);
     clip-path: polygon(100% 0,  100% 98%,  50% 100%,  0 98%,  0 0);
 }
-}.about__container {
-    padding: 100px 15px;
 }
 .about__list {
     display: -ms-grid;
