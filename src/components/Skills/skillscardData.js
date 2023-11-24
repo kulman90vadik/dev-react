@@ -11,7 +11,8 @@ const skillscardData = [
             'useState, useEffect',
             'useRef, useContext, useCallback',
             "React Router Dom",
-            "Fetch, Axios",
+            "Fetch, Axios, Async, Await",
+            "useLocation, useParams, Outlet",
             "Loader, Lodash",
             'JavaScript Fundamentals + ES6'
         ]
