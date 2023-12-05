@@ -43,7 +43,7 @@ const portfoliocardData = [
         id: 13,
         image: branding,
         title: 'Branding Workshop',
-        description: 'React, Redux Toolkit',
+        description: 'React, Redux Toolkit, Typescript',
         link : 'https://branding-nine.vercel.app/'
     },
     {
