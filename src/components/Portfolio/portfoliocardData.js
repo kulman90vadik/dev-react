@@ -35,6 +35,7 @@ import fogex from '../../images/portfolio/fogex.png';
 import fogexwebp from '../../images/portfolio/webp/fogex.webp';
 
 import branding from '../../images/portfolio/branding.jpg';
+import thrones from '../../images/portfolio/thrones.png';
 
 
 
@@ -45,6 +46,13 @@ const portfoliocardData = [
         title: 'Branding Workshop',
         description: 'React, Redux Toolkit, Typescript',
         link : 'https://branding-nine.vercel.app/'
+    },
+    {
+        id: 14,
+        image: thrones,
+        title: 'Game of Thrones',
+        description: 'React, Redux Toolkit',
+        link : 'https://react-throne.vercel.app/'
     },
     {
         id: 1,
