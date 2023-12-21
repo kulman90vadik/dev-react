@@ -166,7 +166,7 @@
     top: 14.5px;
 }
 .header__btn--active span:nth-child(6) {
-    left: calc(50% section.skills- 5px);
+    left: 15px;
     top: 14.5px;
 }
 .loaded .header {
