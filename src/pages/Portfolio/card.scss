@@ -1,0 +1,314 @@
+.portfolio-card {
+    max-width: 489px;
+    width: 100%;
+    height: 255px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 0 3px 4px rgba(40, 41, 41, 0.2);
+    box-shadow: 0 0 3px 4px rgba(40, 41, 41, 0.2);
+    -webkit-clip-path: polygon(50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
+    clip-path: polygon(50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
+}
+@media only screen and (max-width: 1200px) {
+    .portfolio-card {
+        max-width: 505px;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .portfolio-card {
+        height: 230px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .portfolio-card {
+        height: 190px;
+    }
+}
+.portfolio-card:nth-child(odd) {
+    margin-right: 30px;
+}
+@media only screen and (max-width: 1200px) {
+    .portfolio-card:nth-child(odd) {
+        margin-right: 0;
+    }
+}
+.portfolio-card::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        -webkit-transform 0.2s ease;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+.portfolio-card__image {
+    max-width: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: auto;
+    min-height: 100%;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    transition: -webkit-transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out;
+    transition:
+        transform 0.2s ease-out,
+        -webkit-transform 0.2s ease-out;
+}
+.portfolio-card__description {
+    background-color: #43d854;
+    min-width: 200px;
+    height: 60px;
+    -webkit-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.9;
+    left: -100%;
+    z-index: 8;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+@media only screen and (max-width: 400px) {
+    .portfolio-card__description {
+        height: 50px;
+    }
+}
+.portfolio-card__text {
+    text-align: center;
+    font-family: "Julee", sans-serif;
+    font-size: 25px;
+    padding: 0 15px;
+    color: #fff;
+    -webkit-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    transform: skewX(20deg);
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}
+@media only screen and (max-width: 400px) {
+    .portfolio-card__text {
+        line-height: 50px;
+        font-size: 21px;
+    }
+}
+.portfolio-card__box {
+    width: 55px;
+    height: 30px;
+    background-color: rgba(67, 216, 84, 0.2);
+    position: absolute;
+    top: 65%;
+    left: 1000%;
+    opacity: 0.9;
+    -webkit-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+    z-index: 8;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+.portfolio-card__box::before,
+.portfolio-card__box::after {
+    content: "";
+    display: block;
+    background-color: #43d854;
+    opacity: 1;
+    left: 500%;
+    position: absolute;
+}
+.portfolio-card__box::before {
+    width: 15px;
+    height: 12px;
+    top: 10%;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+.portfolio-card__box::after {
+    width: 25px;
+    height: 18px;
+    top: 114%;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+@media only screen and (max-width: 400px) {
+    .portfolio-card__box {
+        width: 35px;
+        height: 17px;
+    }
+}
+.portfolio-card__box-shadow {
+    background-color: #43d854;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: -10%;
+    left: 500%;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.portfolio-card__circle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 130px;
+    height: 130px;
+    background-color: #61dafb;
+    top: -4%;
+    left: 75%;
+    color: #000;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1;
+}
+@media only screen and (max-width: 540px) {
+    .portfolio-card__circle {
+        left: 68%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .portfolio-card__circle {
+        width: 100px;
+        height: 100px;
+        font-size: 21px;
+    }
+}
+.portfolio-card__circle::before {
+    position: absolute;
+    content: "";
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: rgba(97, 218, 251, 0.5);
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+@media only screen and (max-width: 400px) {
+    .portfolio-card__circle:before {
+        width: 130px;
+        height: 130px;
+    }
+}
+.portfolio-card__circle:hover::before {
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease-in;
+    -o-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+}
+.portfolio-card:hover::after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    -o-transition: transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        -webkit-transform 0.2s ease;
+}
+.portfolio-card:hover .portfolio-card__description {
+    left: 10%;
+}
+@media only screen and (max-width: 400px) {
+    .portfolio-card:hover .portfolio-card__description {
+        left: 5%;
+    }
+}
+.portfolio-card:hover .portfolio-card__skills {
+    left: 0;
+}
+.portfolio-card:hover .portfolio-card__image {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.portfolio-card:hover .portfolio-card__box {
+    left: 75%;
+}
+.portfolio-card:hover .portfolio-card__box::before {
+    left: -100%;
+}
+.portfolio-card:hover .portfolio-card__box::after {
+    left: 155%;
+}
+.portfolio-card:hover .portfolio-card__box-shadow {
+    left: -10%;
+}
+.portfolio-card:hover .portfolio-card__circle {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    z-index: 50;
+}
+.portfolio-card:hover .portfolio-card__circle::before {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.portfolio-card__skills {
+    position: absolute;
+    left: 0;
+    top: 0;
+    left: -100%;
+    z-index: 8;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    background-color: #43d854;
+    padding: 2px 7px;
+    font-weight: 700;
+}

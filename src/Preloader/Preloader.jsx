@@ -1,3 +1,5 @@
+import './preloader.scss';
+
 const Preloader = () => {
   return (
     <div id="preloader" className="preloader">

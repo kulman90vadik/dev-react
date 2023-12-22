@@ -1,0 +1,39 @@
+.portfolio {
+    padding: 0px 0 20px 150px;
+}
+
+.portfolio__container {
+    background-color: #111;
+    clip-path: polygon(50% 5%, 100% 0, 100% 95.5%, 50% 100%, 0 95.5%, 0 0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 20px 15px;
+    overflow: hidden;
+    padding-top: 160px;
+    padding-bottom: 85px;
+}
+@media only screen and (max-width: 1200px) {
+    .portfolio__container {
+        -webkit-clip-path: polygon(50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
+        clip-path: polygon(50% 3%, 100% 0, 100% 97%, 50% 100%, 0 97%, 0 0);
+    }
+    @media only screen and (max-width: 992px) {
+        .portfolio {
+            padding: 40px 0;
+        }
+    }
+}
+@media only screen and (max-width: 720px) {
+    .portfolio__container {
+        -webkit-clip-path: polygon(50% 1.5%, 100% 0, 100% 98.5%, 50% 100%, 0 98.5%, 0 0);
+        clip-path: polygon(50% 1.5%, 100% 0, 100% 98.5%, 50% 100%, 0 98.5%, 0 0);
+        padding-top: 90px;
+    }
+}

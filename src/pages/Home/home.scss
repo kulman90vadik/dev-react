@@ -1,0 +1,99 @@
+.home {
+    position: relative;
+    height: 100vh;
+    background-color: #111;
+    overflow: hidden;
+}
+.home__inner {
+    position: absolute;
+    z-index: 10;
+    max-width: 735px;
+    width: 100%;
+    color: #fff;
+    left: 220px;
+    top: 22%;
+}
+@media only screen and (max-width: 992px) {
+    .home__inner {
+        left: 80px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .home__inner {
+        max-width: 300px;
+        left: 15px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .home__inner {
+        max-width: 235px;
+    }
+}
+.home .home-title {
+    font-size: 55px;
+    font-family: "Julee", sans-serif;
+}
+.home .home-title span {
+    display: block;
+    transform: translateX(-200%);
+    animation: transformTitle 3s ease-in-out 2s forwards;
+}
+
+@keyframes transformTitle {
+    0% {
+        transform: translateX(-150%);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    70% {
+        transform: translateX(0%);
+    }
+    90% {
+        transform: translateX(25%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.home .home-title__position {
+    color: #111;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}
+.home .home-title__position::before {
+    position: absolute;
+    content: attr(data-title);
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    color: #61dafb;
+    -webkit-text-stroke: 0 rgba(255, 255, 255, 0.03);
+    border-right: 2px solid #61dafb;
+    overflow: hidden;
+    -webkit-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+}
+.home .home-title__position:hover::before {
+    -webkit-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+    width: 100%;
+}
+@media only screen and (max-width: 720px) {
+    .home .home-title {
+        font-size: 45px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .home .home-title {
+        font-size: 35px;
+    }
+}

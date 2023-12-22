@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import BIRDS from "vanta/dist/vanta.birds.min";
+import './home.scss';
 
-function Home(props) {
+function Home() {
   const [vantaEffect, setVantaEffect] = useState(null);
   const myRef = useRef(null);
   
@@ -38,21 +39,23 @@ function Home(props) {
   }, [vantaEffect]);
   
   return (
+        <main className="main">
+          <section className="home" ref={myRef}>
+            <div className="home__inner">
+              <h1 className='home-title'>
+                <span>Hi,</span>
+                <span>I'm Vadim,</span>
+                <span
+                  className="home-title__position"
+                  data-title="React front-end developer"
+                >
+                  React front-end developer
+                </span>
+              </h1>
+            </div>
+          </section>
 
-        <section className="home" ref={myRef}>
-          <div className="home__inner">
-            <h1 className='home-title'>
-              <span>Hi,</span>
-              <span>I'm Vadim,</span>
-              <span
-                className="home-title__position"
-                data-title="React front-end developer"
-              >
-                React front-end developer
-              </span>
-            </h1>
-          </div>
-        </section>
+        </main>
 
   );
 }

@@ -1,8 +1,8 @@
-import { Icon } from "../Icon";
+import { Icon } from "../../Icon";
 
-const ContactItemCard = (props) => {
+const ContactItemCard = ({items}) => {
 
-  const className = `contact__item contact__item--${props.items.image}`
+  const className = `contact__item contact__item--${items.image}`
 
   return (
     <li className={className} aria-label="Make a call">
@@ -14,11 +14,11 @@ const ContactItemCard = (props) => {
         <circle cx="100" cy="100" r="50" />
       </svg>
       <div className="contact__social">
-        <Icon id={props.items.image} className="contact__icon" />
+        <Icon id={items.image} className="contact__icon" />
       </div>
       <a
         className="contact__link"
-        href={props.items.link}
+        href={items.link}
         aria-label="Make a call"
       >
       </a>

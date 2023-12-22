@@ -1,25 +1,23 @@
-import React from 'react';
-import { useState } from 'react';
-import background from './images/my-photo.jpg';
-import AboutItem from './components/About/AboutItem';
-import aboutItemData from './components/About/aboutItemData';
+
+import background from '../../images/my-photo.jpg';
+import './about.scss';
+import AboutItem from './AboutItem';
+import aboutItemData from './aboutItemData';
 
 const About = () => {
 
-  const[aboutItems, setAboutItems] = useState(aboutItemData);
-
   return (
     <section className="about section" id="about">
-      
-      <h2 className="visually-hidden">Brief information about me</h2>
+
+      <h1 className="visually-hidden">Brief information about me</h1>
       <div className="about__container">
-        
+
         <ul className="about__list">
-          {aboutItems.map(item => <AboutItem item={item} key={item.id}/>)}
+          {aboutItemData.map(item => <AboutItem item={item} key={item.id} />)}
         </ul>
 
         <div className="about__inner">
-          <div className="about__photo" style={{backgroundImage: `url(${background})`}}></div>
+          <div className="about__photo" style={{ backgroundImage: `url(${background})` }}></div>
           <div className="about__content">
             <h3 className="about__head">It's me.</h3>
             <div className="about__text">
