@@ -1,6 +1,6 @@
 import "./scss-setings/includes.scss";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "./Header/Header";
 import Home from "./pages/Home/Home";
@@ -15,9 +15,16 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
 
-  window.onload = () => {
-    setLoading(false);
-  };
+  // window.onload = () => {
+  //   setLoading(false);
+  // };
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
 
   return (
     <>
@@ -35,7 +42,7 @@ const App = () => {
               <Route path="contact" element={<Contact />} />
               {/* <Route path="*" element={<NotFound />} /> */}
             </Routes>
-            {location.pathname != "/" && <Footer />}
+            {location.pathname !== "/" && <Footer />}
           </>
         )
       }
