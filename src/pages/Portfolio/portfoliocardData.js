@@ -36,10 +36,18 @@ import fogexwebp from '../../images/portfolio/webp/fogex.webp';
 
 import branding from '../../images/portfolio/branding.jpg';
 import thrones from '../../images/portfolio/thrones.png';
+import air from '../../images/portfolio/air.png';
 
 
 
 const portfoliocardData = [
+    {
+        id: 15,
+        image: air,
+        title: 'Nike Air',
+        description: 'React, Redux Toolkit, Typescript',
+        link : 'https://air-rho.vercel.app/'
+    },
     {
         id: 13,
         image: branding,
