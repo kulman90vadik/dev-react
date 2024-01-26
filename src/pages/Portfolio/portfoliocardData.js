@@ -37,10 +37,18 @@ import fogexwebp from '../../images/portfolio/webp/fogex.webp';
 import branding from '../../images/portfolio/branding.jpg';
 import thrones from '../../images/portfolio/thrones.png';
 import air from '../../images/portfolio/air.png';
+import shop from '../../images/portfolio/shop.png';
 
 
 
 const portfoliocardData = [
+    {
+        id: 16,
+        image: shop,
+        title: 'Welcome to GreenShop',
+        description: 'React, Redux Toolkit, Typescript',
+        link : 'https://green-vite.vercel.app/'
+    },
     {
         id: 15,
         image: air,
