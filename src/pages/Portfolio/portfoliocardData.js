@@ -49,13 +49,13 @@ const portfoliocardData = [
         description: 'React, Redux Toolkit, Typescript',
         link : 'https://green-vite.vercel.app/'
     },
-    {
-        id: 15,
-        image: air,
-        title: 'Nike Air',
-        description: 'React, Redux Toolkit, Typescript',
-        link : 'https://air-rho.vercel.app/'
-    },
+    // {
+    //     id: 15,
+    //     image: air,
+    //     title: 'Nike Air',
+    //     description: 'React, Redux Toolkit, Typescript',
+    //     link : 'https://air-rho.vercel.app/'
+    // },
     {
         id: 13,
         image: branding,
