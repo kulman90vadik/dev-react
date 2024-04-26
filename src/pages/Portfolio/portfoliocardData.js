@@ -36,8 +36,9 @@ import fogexwebp from '../../images/portfolio/webp/fogex.webp';
 
 import branding from '../../images/portfolio/branding.jpg';
 import thrones from '../../images/portfolio/thrones.png';
-import air from '../../images/portfolio/air.png';
+// import air from '../../images/portfolio/air.png';
 import shop from '../../images/portfolio/shop.png';
+import editor from '../../images/portfolio/editor.png';
 
 
 
@@ -49,6 +50,13 @@ const portfoliocardData = [
         description: 'React, Redux Toolkit, Typescript',
         link : 'https://green-vite.vercel.app/'
     },
+    {
+        id: 15,
+        image: editor,
+        title: 'Text Editor',
+        description: 'React, Typescript',
+        link : 'https://editor-zeta-ivory.vercel.app/'
+    },
     // {
     //     id: 15,
     //     image: air,
@@ -57,18 +65,18 @@ const portfoliocardData = [
     //     link : 'https://air-rho.vercel.app/'
     // },
     {
-        id: 13,
-        image: branding,
-        title: 'Branding Workshop',
-        description: 'React, Redux Toolkit, Typescript',
-        link : 'https://branding-nine.vercel.app/'
-    },
-    {
         id: 14,
         image: thrones,
         title: 'Game of Thrones',
         description: 'React, Redux Toolkit',
         link : 'https://react-throne.vercel.app/'
+    },
+    {
+        id: 13,
+        image: branding,
+        title: 'Branding Workshop',
+        description: 'React, Redux Toolkit, Typescript',
+        link : 'https://branding-nine.vercel.app/'
     },
     {
         id: 1,
