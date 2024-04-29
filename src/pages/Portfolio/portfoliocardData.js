@@ -50,13 +50,19 @@ const portfoliocardData = [
         description: 'React, Redux Toolkit, Typescript',
         link : 'https://green-vite.vercel.app/'
     },
-    {
-        id: 15,
-        image: editor,
-        title: 'Text Editor',
-        description: 'React, Typescript',
-        link : 'https://editor-zeta-ivory.vercel.app/'
-    },
+
+
+
+    // {
+    //     id: 15,
+    //     image: editor,
+    //     title: 'Text Editor',
+    //     description: 'React, Typescript',
+    //     link : 'https://editor-zeta-ivory.vercel.app/'
+    // },
+
+
+
     // {
     //     id: 15,
     //     image: air,
