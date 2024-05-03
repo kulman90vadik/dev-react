@@ -53,13 +53,13 @@ const portfoliocardData = [
 
 
 
-    // {
-    //     id: 15,
-    //     image: editor,
-    //     title: 'Text Editor',
-    //     description: 'React, Typescript',
-    //     link : 'https://editor-zeta-ivory.vercel.app/'
-    // },
+    {
+        id: 15,
+        image: editor,
+        title: 'Text Editor',
+        description: 'React, Typescript',
+        link : 'https://editor-ochre.vercel.app/'
+    },
 
 
 
