@@ -39,10 +39,16 @@ import thrones from '../../images/portfolio/thrones.png';
 // import air from '../../images/portfolio/air.png';
 import shop from '../../images/portfolio/shop.png';
 import editor from '../../images/portfolio/editor.png';
-
-
+import editor from '../../images/portfolio/contact.png';
 
 const portfoliocardData = [
+    {
+        id: 17,
+        image: contact,
+        title: 'Mini Contact App',
+        description: 'React, TanStack Query, Typescript',
+        link : 'https://contact-app-iota-taupe.vercel.app/'
+    },
     {
         id: 16,
         image: shop,
@@ -50,9 +56,6 @@ const portfoliocardData = [
         description: 'React, Redux Toolkit, Typescript',
         link : 'https://green-vite.vercel.app/'
     },
-
-
-
     {
         id: 15,
         image: editor,
@@ -60,9 +63,6 @@ const portfoliocardData = [
         description: 'React, Typescript',
         link : 'https://editor-ochre.vercel.app/'
     },
-
-
-
     // {
     //     id: 15,
     //     image: air,
