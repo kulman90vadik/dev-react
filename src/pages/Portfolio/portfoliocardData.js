@@ -39,7 +39,7 @@ import thrones from '../../images/portfolio/thrones.png';
 // import air from '../../images/portfolio/air.png';
 import shop from '../../images/portfolio/shop.png';
 import editor from '../../images/portfolio/editor.png';
-import editor from '../../images/portfolio/contact.png';
+import contact from '../../images/portfolio/contact.png';
 
 const portfoliocardData = [
     {
