@@ -7,15 +7,14 @@ const skillscardData = [
         number: 87,
         description: 'React',
         list: [
-            'Redux Toolkit',
+            'TanStack Query, Redux Toolkit',
             'useState, useEffect',
             'useRef, useContext, useCallback',
             "React Router Dom",
             "Fetch, Axios, Async, Await",
             "useLocation, useParams, Outlet",
             "Loader, Lodash",
-            'JavaScript Fundamentals + ES6',
-            'TanStack Query'
+            'JavaScript Fundamentals + ES6'
         ]
     },
     {

@@ -3,12 +3,20 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../images/logo.png";
 import logowebp from "../images/logo-wp.webp";
+import Social from './Social';
 
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const activeLink = 'menu__link menu__link--active';
     const normalLink = 'menu__link';
+    const links = [
+        {href: "/", lebel: "Home"},
+        {href: "about", lebel: "About"},
+        {href: "skills", lebel: "My Skills"},
+        {href: "portfolio", lebel: "Portfolio"},
+        {href: "contact", lebel: "Contact"}
+    ]
 
     return (
         <header className="header">
@@ -21,65 +29,24 @@ const Header = () => {
 
             <nav className={`${menuOpen ? 'menu menu--active' : 'menu'}`}>
                 <ul className="menu__list">
-                    <li className="menu__item">
-                        <NavLink to="about"
-                            className={({ isActive }) => isActive ? activeLink : normalLink}
-                            onClick={() => setMenuOpen(false)}
-                            data-text='About' >
-                            About
-                        </NavLink>
-                    </li>
-                    <li className="menu__item">
-                        <NavLink to="skills" className={({ isActive }) => isActive ? activeLink : normalLink} data-text='My Skills'
-                            onClick={() => setMenuOpen(false)}>
-                            My Skills
-                        </NavLink>
-                    </li>
-                    <li className="menu__item">
-                        <NavLink to="portfolio" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? activeLink : normalLink} data-text='Portfolio' >
-                            Portfolio
-                        </NavLink>
-                    </li>
-                    <li className="menu__item">
-                        <NavLink to="contact" onClick={() => setMenuOpen(false)} className={({ isActive }) => isActive ? activeLink : normalLink} data-text='Contact' >
-                            Contact
-                        </NavLink>
-                    </li>
+                    {links.map(item => {
+                        return (
+                            <li className="menu__item">
+                                <NavLink to={item.href}
+                                    className={({ isActive }) => isActive ? activeLink : normalLink}
+                                    onClick={() => setMenuOpen(false)}
+                                    data-text={item.lebel} >
+                                    {item.lebel}
+                                </NavLink>
+                            </li>
+                        )
+                    })}
                 </ul>
             </nav>
 
-            <ul className="social" aria-label="in the form of icons with contacts">
-                <li className="social__item">
-                    <a
-                        className="social__link social__link--github"
-                        href="https://github.com/kulman90vadik"
-                        rel="noreferrer"
-                        aria-label="Go to page in github"
-                    >
-                        <i className="fa fa-github-square" aria-hidden="true"></i>
-                    </a>
-                </li>
-                {/* <li className="social__item">
-                    <a
-                        className="social__link social__link--whatsapp"
-                        href="https://wa.me/+4917641167896?text=Hello."
-                        rel="noreferrer"
-                        aria-label="Ability to call on whatsapp"
-                    >
-                        <i className="fa fa-whatsapp" aria-hidden="true"></i>
-                    </a>
-                </li> */}
-                <li className="social__item">
-                    <a
-                        className="social__link social__link--post"
-                        href="mailto:v_kuhlmann@outlook.com"
-                        rel="noreferrer"
-                        aria-label="write a letter"
-                    >
-                        <i className="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
+            <Social />
+
+
             <button
                 className={`${menuOpen ? 'header__btn header__btn--active' : 'header__btn'}`}
                 type="button"

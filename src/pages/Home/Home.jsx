@@ -47,9 +47,9 @@ function Home() {
                 <span>I'm Vadim,</span>
                 <span
                   className="home-title__position"
-                  data-title="React front-end developer"
+                  data-title="React Developer"
                 >
-                  React front-end developer
+                  React Developer
                 </span>
               </h1>
             </div>
