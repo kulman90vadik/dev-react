@@ -7,6 +7,7 @@ const skillscardData = [
         number: 87,
         description: 'React',
         list: [
+            'Zustand, Redux Toolkit',
             'TanStack Query, Redux Toolkit',
             'useState, useEffect',
             'useRef, useContext, useCallback',
@@ -59,7 +60,7 @@ const skillscardData = [
         id: 4,
         color: '#fbff02',
         number: 89,
-        description: 'Javascript',
+        description: 'TypeScript Javascript',
         list: [
             'Event handling',
             'Manipulation of the elements',
@@ -74,7 +75,7 @@ const skillscardData = [
         id: 5,
         color: '#810505',
         number: 91,
-        description: 'Gulp',
+        description: 'Gulp, Vite',
         list: [
             'Fast implementation of the project',
             'Automation of the layout process',
@@ -87,7 +88,7 @@ const skillscardData = [
         id: 6,
         color: '#df3adf',
         number: 95,
-        description: 'Sass/Scss',
+        description: 'Tailwind CSS, Sass/Scss',
         list: [
             'Accelerated website design',
             'More flexible code',
