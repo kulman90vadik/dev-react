@@ -84,14 +84,14 @@ const portfoliocardData = [
         description: 'React, Redux Toolkit, Typescript',
         link : 'https://branding-nine.vercel.app/'
     },
-    {
-        id: 1,
-        image: djr,
-        imagewebp: djrwebp,
-        title: 'DJR-Bundesgeschäftsstelle',
-        description: 'WordPress',
-        link : 'https://www.djr-stuttgart.org/'
-    },
+    // {
+    //     id: 1,
+    //     image: djr,
+    //     imagewebp: djrwebp,
+    //     title: 'DJR-Bundesgeschäftsstelle',
+    //     description: 'WordPress',
+    //     link : 'https://www.djr-stuttgart.org/'
+    // },
     {
         id: 2,
         image: oral,
