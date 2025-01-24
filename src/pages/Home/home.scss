@@ -30,6 +30,7 @@
             animation-delay: calc(-3s * var(--i));
             @media only screen and (max-width: 545px) {
                 margin-left: 5px;
+                letter-spacing: 0px;
             }
         }
 
