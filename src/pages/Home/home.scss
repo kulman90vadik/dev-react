@@ -29,7 +29,7 @@
             animation: displayText 12s infinite;
             animation-delay: calc(-3s * var(--i));
             @media only screen and (max-width: 545px) {
-                margin-left: 7px;
+                margin-left: 5px;
             }
         }
 
