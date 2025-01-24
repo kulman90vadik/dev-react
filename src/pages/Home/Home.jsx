@@ -37,12 +37,20 @@ function Home() {
     };
     
   }, [vantaEffect]);
+
+  const items = [
+    { id: 0, text: "React." },
+    { id: 1, text: "Javascript." },
+    { id: 2, text: "Frontend." },
+    { id: 3, text: "Backend." },
+  ];
+
   
   return (
         <main className="main">
           <section className="home" ref={myRef}>
-            <div className="home__inner">
-              <h1 className='home-title'>
+            {/* <div className="home__inner"> */}
+              {/* <h1 className='home-title'>
                 <span>Hi,</span>
                 <span>I'm Vadim,</span>
                 <span
@@ -51,8 +59,24 @@ function Home() {
                 >
                   Frontend / Backend - Entwickler
                 </span>
-              </h1>
-            </div>
+              </h1> */}
+
+
+            {/* </div> */}
+            
+            <h1 className="home__title">
+            <div>Hi, I'm Vadim!</div>
+              I love 
+              {items.map((item) => (
+                <span
+                  key={item.id}
+                  style={{ "--i": item.id }}
+                  data-text={item.text}
+                >
+                  {item.text}
+                </span>
+              ))}
+            </h1>
           </section>
 
         </main>

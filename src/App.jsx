@@ -15,15 +15,11 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
 
-  // window.onload = () => {
-  //   setLoading(false);
-  // };
-
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 500);
   }, []);
 
   return (
@@ -40,7 +36,6 @@ const App = () => {
               <Route path="skills" element={<Skills />} />
               <Route path="portfolio" element={<Portfolio />} />
               <Route path="contact" element={<Contact />} />
-              {/* <Route path="*" element={<NotFound />} /> */}
             </Routes>
             {location.pathname !== "/" && <Footer />}
           </>
