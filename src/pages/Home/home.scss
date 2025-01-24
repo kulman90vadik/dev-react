@@ -7,10 +7,10 @@
 .home__inner {
     position: absolute;
     z-index: 10;
-    max-width: 360px;
+    max-width: 470px;
     width: 100%;
     color: #fff;
-    left: 220px;
+    left: 50px;
     top: 22%;
 }
 @media only screen and (max-width: 992px) {
@@ -20,7 +20,7 @@
 }
 @media only screen and (max-width: 720px) {
     .home__inner {
-        max-width: 300px;
+        max-width: 385px;
         left: 15px;
     }
 }
@@ -94,6 +94,6 @@
 }
 @media only screen and (max-width: 400px) {
     .home .home-title {
-        font-size: 35px;
+        font-size: 28px;
     }
 }
