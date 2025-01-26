@@ -56,36 +56,37 @@
             animation: animate 3s linear infinite;
             filter: drop-shadow(0 0 5px #61dafb) drop-shadow(0 0 25px #61dafb);
         }
-    }
 
-    &__react {
-        animation-delay: 3s;
-        &::before {
-            content: 'React.';
+        &--react {
+            animation-delay: 0s;
+            &::before {
+                content: 'React.';
+            }
+        }
+        &--javascript {
+            animation-delay: -3s;
+            &::before {
+                content: 'Javascript.';
+            }
+        }
+    
+        &--frontend {
+            animation-delay: -6s;
+            &::before {
+                content: 'Frontend.';
+            }
+        }
+    
+        &--backend {
+            animation-delay: -9s;
+            &::before {
+                content: 'Backend.';
+    
+            }
         }
     }
 
-    &__javascript {
-        animation-delay: 6s;
-        &::before {
-            content: 'Javascript.';
-        }
-    }
 
-    &__frontend {
-        animation-delay: 9s;
-        &::before {
-            content: 'Frontend.';
-        }
-    }
-
-    &__backend {
-        animation-delay: 12s;
-        &::before {
-            content: 'Backend.';
-
-        }
-    }
 }
 
 
