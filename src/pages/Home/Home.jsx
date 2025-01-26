@@ -68,13 +68,16 @@ function Home() {
             <div>Hi, I'm Vadim!</div>
               I love 
               {items.map((item) => (
-                <span
-                  key={item.id}
-                  style={{ "--i": item.id }}
-                  data-text={item.text}
-                >
-                  {item.text}
-                </span>
+               <span
+               key={item.id}
+               style={{
+                 animationDelay: `${-3 * item.id}s`,
+                 WebkitAnimationDelay: `${-3 * item.id}s`, // для Safari
+               }}
+               data-text={item.text}
+             >
+               {item.text}
+             </span>
               ))}
             </h1>
           </section>
