@@ -13,49 +13,77 @@
         font-size: 50px;
         padding: 0 20px;
         display: inline-block;
+
         @media only screen and (max-width: 545px) {
             left: 0px;
             font-size: 40px;
             padding: 0 12px;
         }
-        span {
-            position: relative;
-            letter-spacing: 2px;
-            line-height: 1.5;
-            padding: 5px 10px;
-            margin-left: 15px;
-            color: transparent;
-            -webkit-text-stroke: 1px #61dafb;
-            animation: displayText 12s infinite;
-            animation-delay: calc(-3s * var(--i));
-            @media only screen and (max-width: 545px) {
-                margin-left: 5px;
-                letter-spacing: 0px;
-            }
-        }
-
         div {
             font-family: "Julee", sans-serif;
         }
+    }
 
-        span {
-            &::before {
-                content: attr(data-text);
-                top: 0px;
-                left: -1px;
-                position: absolute;
-                width: 0;
-                height: 100%;
-                overflow: hidden;
-                color: #61dafb;
-                white-space: nowrap;
-                border: 1px solid #61dafb;
-                box-sizing: border-box;
-                border-radius: 10px;
-                padding: 5px 10px;
-                animation: animate 3s linear infinite;
-                filter: drop-shadow(0 0 5px #61dafb) drop-shadow(0 0 25px #61dafb);
-            }
+    &__text {
+        position: relative;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        padding: 5px 10px;
+        margin-left: 15px;
+        color: transparent;
+        -webkit-text-stroke: 1px #61dafb;
+        animation: displayText 12s infinite;
+        // animation-delay: calc(-3s * var(--i));
+        @media only screen and (max-width: 545px) {
+            margin-left: 5px;
+            letter-spacing: 0px;
+        }
+
+        &::before {
+            // content: attr(data-text);
+            top: 0px;
+            left: -1px;
+            position: absolute;
+            width: 0;
+            height: 100%;
+            overflow: hidden;
+            color: #61dafb;
+            white-space: nowrap;
+            border: 1px solid #61dafb;
+            box-sizing: border-box;
+            border-radius: 10px;
+            padding: 5px 10px;
+            animation: animate 3s linear infinite;
+            filter: drop-shadow(0 0 5px #61dafb) drop-shadow(0 0 25px #61dafb);
+        }
+    }
+
+    &__react {
+        animation-delay: 3s;
+        &::before {
+            content: 'React.';
+        }
+    }
+
+    &__javascript {
+        animation-delay: 6s;
+        &::before {
+            content: 'Javascript.';
+        }
+    }
+
+    &__frontend {
+        animation-delay: 9s;
+        &::before {
+            content: 'Frontend.';
+        }
+    }
+
+    &__backend {
+        animation-delay: 12s;
+        &::before {
+            content: 'Backend.';
+
         }
     }
 }
@@ -68,28 +96,30 @@
 
     25% {
         display: none;
-    }   
+    }
 
     100% {
         display: none;
-    }   
+    }
 }
 
 @keyframes animate {
     0% {
         width: 0;
     }
+
     10% {
         width: 0;
     }
 
     70% {
         width: 100%;
-    }   
-    
+    }
+
     90% {
         width: 100%;
-    }   
+    }
+
     100% {
         width: 0;
     }
@@ -145,7 +175,7 @@
 //     .home__title--react::before {
 //         content: 'React.';
 //     }
-    
+
 //     .home__title--javascript::before {
 //         content: 'Javascript.';
 //     }

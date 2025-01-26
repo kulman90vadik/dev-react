@@ -38,12 +38,12 @@ function Home() {
     
   }, [vantaEffect]);
 
-  const items = [
-    { id: 0, text: "React." },
-    { id: 1, text: "Javascript." },
-    { id: 2, text: "Frontend." },
-    { id: 3, text: "Backend." },
-  ];
+  // const items = [
+  //   { id: 0, text: "React." },
+  //   { id: 1, text: "Javascript." },
+  //   { id: 2, text: "Frontend." },
+  //   { id: 3, text: "Backend." },
+  // ];
 
   
   return (
@@ -52,9 +52,14 @@ function Home() {
           
             
             <h1 className="home__title">
-            <div>Hi, I'm Vadim!</div>
+              <div>Hi, I'm Vadim!</div>
               I love 
-              {items.map((item) => (
+              <span className="home__text home__react">React.</span>
+              <span className="home__text home__javascript">Javascript.</span>
+              <span className="home__text home__frontend">Frontend.</span>
+              <span className="home__text home__backend">Backend.</span>
+             
+              {/* {items.map((item) => (
                 <span
                   key={item.id}
                   style={{ "--i": item.id }}
@@ -62,7 +67,7 @@ function Home() {
                 >
                   {item.text}
                 </span>
-              ))}
+              ))} */}
             </h1>
           </section>
 
