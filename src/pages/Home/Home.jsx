@@ -65,21 +65,13 @@ function Home() {
             {/* </div> */}
             
             <h1 className="home__title">
-            <div>Hi, I'm Vadim!</div>
-              I love 
-              {items.map((item) => (
-               <span
-               key={item.id}
-               style={{
-                 animationDelay: `${-3 * item.id}s`,
-                 WebkitAnimationDelay: `${-3 * item.id}s`, // для Safari
-               }}
-               data-text={item.text}
-             >
-               {item.text}
-             </span>
-              ))}
-            </h1>
+<div>Hi, I'm Vadim!</div>
+I love 
+<span className="home__title--react">React.</span>
+<span className="home__title--javascript">Javascript.</span>
+<span className="home__title--frontend">Frontend.</span>
+<span className="home__title--backend">Backend.</span>
+</h1>
           </section>
 
         </main>
@@ -88,3 +80,14 @@ function Home() {
 }
 
 export default Home;
+
+
+
+{/* <h1 className="home__title">
+<div>Hi, I'm Vadim!</div>
+I love 
+<span className="home__title--react">React.</span>
+<span className="home__title--javascript">Javascript.</span>
+<span className="home__title--frontend">Frontend.</span>
+<span className="home__title--backend">Backend.</span>
+</h1> */}
