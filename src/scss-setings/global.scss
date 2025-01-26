@@ -1,7 +1,7 @@
 .visually-hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
-    clip: rect(1px,  1px,  1px,  1px);
+    clip: rect(1px, 1px, 1px, 1px);
     padding: 0 !important;
     border: 0 !important;
     height: 1px !important;
@@ -9,22 +9,30 @@
     overflow: hidden;
 }
 
-html, body {
+html,
+body {
     height: 100%
 }
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
 
 .main {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     padding-left: 150px;
-}
+    // height: 100%;
 
-@media only screen and (max-width: 990px) {
-    .main {
+    @media only screen and (max-width: 990px) {
         padding-left: 0;
     }
 }
+
 
 [class*="__container"] {
     max-width: 1270px;
@@ -73,12 +81,12 @@ body {
 }
 
 
-.section {
-    padding-left: 150px;
-}
+// .section {
+//     // padding-left: 150px;
+// }
 
-@media only screen and (max-width: 992px) {
-    .section {
-        padding-left: 0;
-    }
-}
+// @media only screen and (max-width: 992px) {
+//     .section {
+//         padding-left: 0;
+//     }
+// }

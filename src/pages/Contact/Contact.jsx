@@ -6,7 +6,7 @@ import './contact.scss';
 const Contact = () => {
 
   return (
-    <main className="main">
+    // <main className="main">
       <section className="contact section" id="contact">
         <h1 className="visually-hidden">Main contacts</h1>
         <div
@@ -22,7 +22,7 @@ const Contact = () => {
           </ul>
         </div>
       </section>
-    </main>
+    // </main>
   );
 };
 

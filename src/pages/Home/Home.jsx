@@ -47,7 +47,7 @@ function Home() {
 
   
   return (
-        <main className="main">
+        // <main className="main">
           <section className="home" ref={myRef}>
           
             
@@ -71,7 +71,7 @@ function Home() {
             </h1>
           </section>
 
-        </main>
+        // </main>
 
   );
 }

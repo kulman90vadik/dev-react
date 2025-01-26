@@ -1,4 +1,4 @@
-
+/* 
 
 html {
     -webkit-box-sizing: border-box;
@@ -48,21 +48,22 @@ html, body {
     -ms-flex-positive: 1;
     flex-grow: 1;
     padding-left: 150px;
+    @media only screen and (max-width: 990px) {
+        padding-left: 0;
+    }
 }
-@media only screen and (max-width: 990px) {
-    .main {
-    padding-left: 0;
-}
-}
+    
 [class*="__container"] {
     max-width: 1270px;
     padding: 0 15px;
     margin: 0 auto;
 }
+
 * {
     scrollbar-width: thin;
     scrollbar-color: #61dafb rgba(17, 17, 17, 0.6);
 }
+
 *::-webkit-scrollbar {
     height: 12px;
     width: 12px;
@@ -285,9 +286,7 @@ body {
 
 .section {
     padding-left: 150px;
-}
-@media only screen and (max-width: 992px) {
-    .section {
+    @media only screen and (max-width: 992px) {
         padding-left: 0;
     }
-}
+} */
