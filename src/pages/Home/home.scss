@@ -27,7 +27,7 @@
             color: transparent;
             -webkit-text-stroke: 1px #61dafb;
             animation: displayText 12s infinite;
-            // animation-delay: calc(-3s * var(--i));
+            animation-delay: calc(-3s * var(--i));
             @media only screen and (max-width: 545px) {
                 margin-left: 5px;
                 letter-spacing: 0px;
@@ -40,7 +40,7 @@
 
         span {
             &::before {
-                // content: attr(data-text);
+                content: attr(data-text);
                 top: 0px;
                 left: -1px;
                 position: absolute;
@@ -57,33 +57,9 @@
                 filter: drop-shadow(0 0 5px #61dafb) drop-shadow(0 0 25px #61dafb);
             }
         }
-        .home__title--react {
-            animation-delay: 0;
-            &::before {
-                content: 'React.';
-            }    
-        }
-        .home__title--javascript {
-            animation-delay: -3s;
-            &::before {
-                content: 'Javascript.';
-            }    
-        }
-        .home__title--frontend {
-            animation-delay: -6s;
-            &::before {
-                content: 'Frontend.';
-            }    
-        }
-        .home__title--backend {
-            animation-delay: -9s;
-            &::before {
-                content: 'Backend.';
-            }    
-        }
-        
     }
-}    
+}
+
 
 @keyframes displayText {
     0% {
@@ -117,95 +93,107 @@
     100% {
         width: 0;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /* Специфичные стили для Safari */
+// @media not all and (min-resolution:.001dpcm) { 
+
+//     .home__title--react {
+//         animation-delay: 0s;
+//     }
+
+//     .home__title--javascript {
+//         animation-delay: 3s;
+//     }
+
+//     .home__title--frontend {
+//         animation-delay: 6s;
+//     }
+
+//     .home__title--backend {
+//         animation-delay: 9s;
+//     }
+
+//     .home__title--react::before {
+//         content: 'React.';
+//     }
     
-}
+//     .home__title--javascript::before {
+//         content: 'Javascript.';
+//     }
+
+//     .home__title--frontend::before {
+//         content: 'Frontend.';
+//     }
+
+//     .home__title--backend::before {
+//         content: 'Backend.';
+//     }
 
 
 
+// /* Применение анимаций для других браузеров */
+// .home__title--react {
+//     animation-delay: 0s;
+// }
+
+// .home__title--javascript {
+//     animation-delay: 3s;
+// }
+
+// .home__title--frontend {
+//     animation-delay: 6s;
+// }
+
+// .home__title--backend {
+//     animation-delay: 9s;
+// }
 
 
 
+// .home__title--react::before {
+//     content: 'React.';
+// }
+
+// .home__title--javascript::before {
+//     content: 'Javascript.';
+// }
+
+// .home__title--frontend::before {
+//     content: 'Frontend.';
+// }
+
+// .home__title--backend::before {
+//     content: 'Backend.';
+// }
 
 
-
-
-
-
-
-
-
-
-/* Специфичные стили для Safari */
-@media not all and (min-resolution:.001dpcm) { 
-
-      .home__title--react {
-          animation-delay: 0s;
-      }
-  
-      .home__title--javascript {
-          animation-delay: 3s;
-      }
-  
-      .home__title--frontend {
-          animation-delay: 6s;
-      }
-  
-      .home__title--backend {
-          animation-delay: 9s;
-      }
-  
-      .home__title--react::before {
-          content: 'React.';
-      }
-      
-      .home__title--javascript::before {
-          content: 'Javascript.';
-      }
-  
-      .home__title--frontend::before {
-          content: 'Frontend.';
-      }
-  
-      .home__title--backend::before {
-          content: 'Backend.';
-      }
-
-
-  
-  /* Применение анимаций для других браузеров */
-  .home__title--react {
-      animation-delay: 0s;
-  }
-  
-  .home__title--javascript {
-      animation-delay: 3s;
-  }
-  
-  .home__title--frontend {
-      animation-delay: 6s;
-  }
-  
-  .home__title--backend {
-      animation-delay: 9s;
-  }
-
-
-  
-  .home__title--react::before {
-      content: 'React.';
-  }
-  
-  .home__title--javascript::before {
-      content: 'Javascript.';
-  }
-  
-  .home__title--frontend::before {
-      content: 'Frontend.';
-  }
-  
-  .home__title--backend::before {
-      content: 'Backend.';
-  }
-
-
-}
+// }

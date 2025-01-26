@@ -49,29 +49,21 @@ function Home() {
   return (
         <main className="main">
           <section className="home" ref={myRef}>
-            {/* <div className="home__inner"> */}
-              {/* <h1 className='home-title'>
-                <span>Hi,</span>
-                <span>I'm Vadim,</span>
-                <span
-                  className="home-title__position"
-                  data-title="Frontend / Backend - Entwickler"
-                >
-                  Frontend / Backend - Entwickler
-                </span>
-              </h1> */}
-
-
-            {/* </div> */}
+          
             
             <h1 className="home__title">
-<div>Hi, I'm Vadim!</div>
-I love 
-<span className="home__title--react">React.</span>
-<span className="home__title--javascript">Javascript.</span>
-<span className="home__title--frontend">Frontend.</span>
-<span className="home__title--backend">Backend.</span>
-</h1>
+            <div>Hi, I'm Vadim!</div>
+              I love 
+              {items.map((item) => (
+                <span
+                  key={item.id}
+                  style={{ "--i": item.id }}
+                  data-text={item.text}
+                >
+                  {item.text}
+                </span>
+              ))}
+            </h1>
           </section>
 
         </main>
@@ -80,14 +72,3 @@ I love
 }
 
 export default Home;
-
-
-
-{/* <h1 className="home__title">
-<div>Hi, I'm Vadim!</div>
-I love 
-<span className="home__title--react">React.</span>
-<span className="home__title--javascript">Javascript.</span>
-<span className="home__title--frontend">Frontend.</span>
-<span className="home__title--backend">Backend.</span>
-</h1> */}
