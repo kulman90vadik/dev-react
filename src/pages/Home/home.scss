@@ -119,3 +119,93 @@
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Специфичные стили для Safari */
+@media not all and (min-resolution:.001dpcm) { 
+
+      .home__title--react {
+          animation-delay: 0s;
+      }
+  
+      .home__title--javascript {
+          animation-delay: 3s;
+      }
+  
+      .home__title--frontend {
+          animation-delay: 6s;
+      }
+  
+      .home__title--backend {
+          animation-delay: 9s;
+      }
+  
+      .home__title--react::before {
+          content: 'React.';
+      }
+      
+      .home__title--javascript::before {
+          content: 'Javascript.';
+      }
+  
+      .home__title--frontend::before {
+          content: 'Frontend.';
+      }
+  
+      .home__title--backend::before {
+          content: 'Backend.';
+      }
+
+
+  
+  /* Применение анимаций для других браузеров */
+  .home__title--react {
+      animation-delay: 0s;
+  }
+  
+  .home__title--javascript {
+      animation-delay: 3s;
+  }
+  
+  .home__title--frontend {
+      animation-delay: 6s;
+  }
+  
+  .home__title--backend {
+      animation-delay: 9s;
+  }
+
+
+  
+  .home__title--react::before {
+      content: 'React.';
+  }
+  
+  .home__title--javascript::before {
+      content: 'Javascript.';
+  }
+  
+  .home__title--frontend::before {
+      content: 'Frontend.';
+  }
+  
+  .home__title--backend::before {
+      content: 'Backend.';
+  }
+
+
+}
