@@ -52,12 +52,17 @@ function Home() {
           
             
             <h1 className="home__title">
-              <div>Hi, I'm Vadim!</div>
+              <div className="home__name">Hi, I'm Vadim!</div>
+              <div className="home__block">
+
+              <p>
               I love 
+              </p>
               <span className="home__text home__text--react">React.</span>
               <span className="home__text home__text--javascript">Javascript.</span>
               <span className="home__text home__text--frontend">Frontend.</span>
               <span className="home__text home__text--backend">Backend.</span>
+              </div>
              
               {/* {items.map((item) => (
                 <span

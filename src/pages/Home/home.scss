@@ -13,15 +13,82 @@
         font-size: 50px;
         padding: 0 20px;
         display: inline-block;
-
         @media only screen and (max-width: 545px) {
             left: 0px;
             font-size: 40px;
             padding: 0 12px;
         }
-        div {
-            font-family: "Julee", sans-serif;
+
+        @media not all and (min-resolution: 0.001dpcm) {
+            @supports (-webkit-appearance: none) {
+                @media only screen and (max-width: 545px) {
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 100%;
+                }
+            }
+        }        
+
+        @-moz-document url-prefix() {
+            @media only screen and (max-width: 545px) {
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+            }
         }
+       
+        p {
+            display: inline-block;
+            text-wrap: nowrap;
+            @-moz-document url-prefix() {
+                margin-right: 18px;
+                @media only screen and (max-width: 545px) {
+                    margin-right: 0px;
+                }
+            }
+            @media not all and (min-resolution: 0.001dpcm) {
+                @supports (-webkit-appearance: none) {
+                    margin-right: 18px;
+                    @media only screen and (max-width: 545px) {
+                        margin-right: 0px;
+                    }
+                }
+            }        
+        }
+    }
+    &__name {
+        font-family: "Julee", sans-serif;
+        @-moz-document url-prefix() {
+            @media only screen and (max-width: 545px) {
+                text-align: center;
+            }    
+        }
+        @media not all and (min-resolution: 0.001dpcm) {
+            @supports (-webkit-appearance: none) {
+                @media only screen and (max-width: 545px) {
+                    text-align: center;
+                }  
+            }
+        }     
+    }
+
+    &__block {
+        @-moz-document url-prefix() {
+            display: flex;
+            align-items: center;
+            @media only screen and (max-width: 545px) {
+                flex-direction: column;
+            }
+        }
+        @media not all and (min-resolution: 0.001dpcm) {
+            @supports (-webkit-appearance: none) {
+                display: flex;
+                align-items: center;
+                @media only screen and (max-width: 545px) {
+                    flex-direction: column;
+                }
+            }
+        }   
     }
 
     &__text {
@@ -34,6 +101,30 @@
         -webkit-text-stroke: 1px #61dafb;
         animation: displayText 12s infinite;
         // animation-delay: calc(-3s * var(--i));
+        @-moz-document url-prefix() {
+            animation: displayTextFix 12s infinite;
+            padding: 5px 10px;
+            margin-left: 0;
+            opacity: 0;
+            height: 0;
+            width: 0;
+            display: inline-block;
+            visibility: hidden; // Скрываем визуально
+            overflow: hidden;   // Обрезаем содержимое
+        }
+        @media not all and (min-resolution: 0.001dpcm) {
+            @supports (-webkit-appearance: none) {
+                animation: displayTextFix 12s infinite;
+                padding: 5px 10px;
+                margin-left: 0;
+                opacity: 0;
+                height: 0;
+                width: 0;
+                display: inline-block;
+                visibility: hidden; // Скрываем визуально
+                overflow: hidden;   // Обрезаем содержимое
+            }
+        }   
         @media only screen and (max-width: 545px) {
             margin-left: 5px;
             letter-spacing: 0px;
@@ -55,10 +146,19 @@
             padding: 5px 10px;
             animation: animate 3s linear infinite;
             filter: drop-shadow(0 0 5px #61dafb) drop-shadow(0 0 25px #61dafb);
+            @-moz-document url-prefix() {
+                padding: 5px 10px;
+            }
+            @media not all and (min-resolution: 0.001dpcm) {
+                @supports (-webkit-appearance: none) {
+                    padding: 5px 10px;
+                }
+            }   
         }
 
+      
+
         &--react {
-            // animation: displayText 12s infinite;
             animation-delay: 0s;
             &::before {
                 content: 'React.';
@@ -91,6 +191,43 @@
 }
 
 
+    @keyframes displayTextFix {
+        0% {
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+            width: 0;
+        }
+        10% {
+            opacity: 1;
+            visibility: visible;
+            height: auto;
+            width: auto;
+        }
+        25% {
+            opacity: 1;
+            visibility: visible;
+            height: auto;
+            width: auto;
+        }
+        35% {
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+            width: 0;
+        }
+        90% {
+            opacity: 0;
+        }
+        100% {
+            visibility: hidden;
+            height: 0;
+            width: 0;
+            opacity: 0;
+        }
+    }
+
+
 @keyframes displayText {
     0% {
         display: inline-block;
@@ -104,6 +241,9 @@
         display: none;
     }
 }
+
+
+
 
 @keyframes animate {
     0% {
