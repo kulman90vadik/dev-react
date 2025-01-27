@@ -1,7 +1,7 @@
 
 import './port.scss';
 import React from 'react';
-import {portfolioCardData} from './portfolioCardData';
+import { portfolioCardData } from './portfolioCardData';
 
 const Port = () => {
     const sliderRef = React.useRef(null);
@@ -22,8 +22,18 @@ const Port = () => {
       }
     };
   
-
-
+    // const handleSlideClick = (index) => {
+    //   const slider = sliderRef.current;
+    //   const slides = Array.from(slider.children);
+    //   const clickedSlide = slides[index];
+  
+    //   // Логика: Если это первый слайд, перемещаем его в конец, иначе перемещаем кликнутый слайд в начало
+    //   if (index === 0) {
+    //     slider.appendChild(clickedSlide);
+    //   } else {
+    //     slider.prepend(clickedSlide);
+    //   }
+    // };
 
     return (
         <section className="port">
@@ -31,7 +41,7 @@ const Port = () => {
             <div className="port__container">
                 <div className="port__slider " ref={sliderRef}>
                     {
-                        portfolioCardData.map(item => {
+                        portfolioCardData.map((item, index) => {
                             return (
                                 <div className="port__slide" key={item.id} style={{ '--img': `url(${item.image})` }}>
                                     <div className="port__content" >
@@ -47,7 +57,7 @@ const Port = () => {
                     <button className="port__btn port__btn--prev" onClick={handlePrev} type='button'>
                         <i class="fa fa-arrow-left"></i>
                     </button>
-                    <button className="port__btn port__btn--next"  onClick={handleNext} type='button'>
+                    <button className="port__btn port__btn--next" onClick={handleNext} type='button'>
                         <i class="fa fa-arrow-right"></i>
                     </button>
                 </div>
