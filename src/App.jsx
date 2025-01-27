@@ -11,7 +11,8 @@ import Port from "./pages/Port/Port";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./Footer/Footer";
 import Preloader from "./Preloader/Preloader";
-
+import Cursor from './Cursor/Cursor';
+ 
 const App = () => {
   const [loading, setLoading] = useState(true);
   const location = useLocation();
@@ -31,6 +32,7 @@ const App = () => {
         ) : (
           <>
             <Header />
+            <Cursor />
             <main className="main">
 
             <Routes>

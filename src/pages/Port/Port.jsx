@@ -1,92 +1,55 @@
 
 import './port.scss';
-import fogex from '../../images/portfolio/fogex.png';
-import ringo from '../../images/portfolio/ringo.png';
-import wood from '../../images/portfolio/wood.png';
-import djr from '../../images/portfolio/djr-foto.png';
-import oral from '../../images/portfolio/oral.png';
-import desing from '../../images/portfolio/desing.jpg';
-import boon from '../../images/portfolio/boon.png';
-import arron from '../../images/portfolio/arron.png';
-import arronwebp from '../../images/portfolio/webp/arron.webp';
-import glee from '../../images/portfolio/glee.jpg';
-import ck from '../../images/portfolio/ck.jpg';
-import dreams from '../../images/portfolio/dreams.jpg';
-import wawe from '../../images/portfolio/wawe.png';
-import branding from '../../images/portfolio/branding.jpg';
-import shop from '../../images/portfolio/shop.png';
-import editor from '../../images/portfolio/editor.png';
-import contact from '../../images/portfolio/contact.png';
-
+import React from 'react';
+import {portfolioCardData} from './portfolioCardData';
 
 const Port = () => {
+    const sliderRef = React.useRef(null);
 
-    const portfoliocardData = [
+    const handleNext = () => {
+      const slider = sliderRef.current;
+      const slides = slider.children;
+      if (slides.length > 0) {
+        slider.appendChild(slides[0]); // Перемещаем первый слайд в конец
+      }
+    };
+  
+    const handlePrev = () => {
+      const slider = sliderRef.current;
+      const slides = slider.children;
+      if (slides.length > 0) {
+        slider.prepend(slides[slides.length - 1]); // Перемещаем последний слайд в начало
+      }
+    };
+  
 
-        {
-            id: 1,
-            image: wood,
-            title: 'Wood Craft Studio',
-            description: 'Html / Css / Js',
-            link: 'https://kulman90vadik.github.io/woodCraft/'
-        },
-        {
-            id: 2,
-            image: ringo,
-            // image: '../../images/portfolio/ringo.png',
-            title: 'Ringo',
-            description: 'Html / Css / Js',
-            link: 'https://kulman90vadik.github.io/ringo/'
-        },
-        {
-            id: 3,
-            image: fogex,
-            title: 'Fogex',
-            description: 'Html / Css / Js',
-            link: 'https://kulman90vadik.github.io/fogex/'
-        },
-        {
-            id: 4,
-            image: ck,
-            title: 'Infrastructure',
-            description: 'Html / Css / Js',
-            link : 'https://kulman90vadik.github.io/ck/'
-        },
-        {
-            id: 5,
-            image: dreams,
-            title: 'Dreams',
-            description: 'Html / Css / Js',
-            link : 'https://kulman90vadik.github.io/dreamss/'
-        },
-        {
-            id: 6,
-            image: wawe,
-            title: 'Wawe',
-            description: 'Html / Css / Js',
-            link : 'https://kulman90vadik.github.io/my-wawe/'
-        }
 
-    ]
 
     return (
         <section className="port">
             {/* <h2 className="visually-hidden">portfolio with my work</h2> */}
             <div className="port__container">
-                <div className="port__slider">
+                <div className="port__slider " ref={sliderRef}>
                     {
-                        portfoliocardData.map(item => {
+                        portfolioCardData.map(item => {
                             return (
-
                                 <div className="port__slide" key={item.id} style={{ '--img': `url(${item.image})` }}>
                                     <div className="port__content" >
-                                        {item.description}
+                                        <span>{item.title}</span>
+                                        <p>{item.description}</p>
                                     </div>
                                 </div>
                             )
                         })
                     }
-
+                </div>
+                <div className="port__buttons">
+                    <button className="port__btn port__btn--prev" onClick={handlePrev} type='button'>
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                    <button className="port__btn port__btn--next"  onClick={handleNext} type='button'>
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
