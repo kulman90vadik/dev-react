@@ -1,40 +1,27 @@
-import djr from '../../images/portfolio/djr-foto.png';
-import djrwebp from '../../images/portfolio/webp/djr-foto.webp';
 
 import oral from '../../images/portfolio/oral.png';
 import oralwebp from '../../images/portfolio/webp/oral.webp';
-
 import desing from '../../images/portfolio/desing.jpg';
 import desingwebp from '../../images/portfolio/webp/desing.webp';
-
 import boon from '../../images/portfolio/boon.png';
 import boonwebp from '../../images/portfolio/webp/boon.webp';
-
 import arron from '../../images/portfolio/arron.png';
 import arronwebp from '../../images/portfolio/webp/arron.webp';
-
 import glee from '../../images/portfolio/glee.jpg';
 import gleewebp from '../../images/portfolio/webp/glee.webp';
-
 import ck from '../../images/portfolio/ck.jpg';
 import ckwebp from '../../images/portfolio/webp/ck.webp';
-
 import dreams from '../../images/portfolio/dreams.jpg';
 import dreamswebp from '../../images/portfolio/webp/dreams.webp';
-
 import wawe from '../../images/portfolio/wawe.png';
 import wawewebp from '../../images/portfolio/webp/wawe.webp';
-
 import wood from '../../images/portfolio/wood.png';
 import woodwebp from '../../images/portfolio/webp/wood.webp';
-
 import ringo from '../../images/portfolio/ringo.png';
 import ringowebp from '../../images/portfolio/webp/ringo.webp';
-
 import fogex from '../../images/portfolio/fogex.png';
 import fogexwebp from '../../images/portfolio/webp/fogex.webp';
-
-import branding from '../../images/portfolio/branding.jpg';
+// import branding from '../../images/portfolio/branding.jpg';
 import thrones from '../../images/portfolio/thrones.png';
 // import air from '../../images/portfolio/air.png';
 import shop from '../../images/portfolio/shop.png';
@@ -70,13 +57,13 @@ const portfoliocardData = [
         description: 'React, Redux Toolkit',
         link : 'https://react-throne.vercel.app/'
     },
-    {
-        id: 13,
-        image: branding,
-        title: 'Branding Workshop',
-        description: 'React, Redux Toolkit, Typescript',
-        link : 'https://branding-nine.vercel.app/'
-    },
+    // {
+    //     id: 13,
+    //     image: branding,
+    //     title: 'Branding Workshop',
+    //     description: 'React, Redux Toolkit, Typescript',
+    //     link : 'https://branding-nine.vercel.app/'
+    // },
     {
         id: 2,
         image: oral,
@@ -91,7 +78,7 @@ const portfoliocardData = [
         imagewebp: desingwebp,
         title: 'Deluxe House',
         description: 'Html / Css / Js',
-        link : 'https://kulman90vadik.github.io/ck/'
+        link : 'https://kulman90vadik.github.io/desing-dev/'
     },
     {
         id: 4,

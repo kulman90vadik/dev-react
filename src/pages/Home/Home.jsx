@@ -47,10 +47,7 @@ function Home() {
 
   
   return (
-        // <main className="main">
           <section className="home" ref={myRef}>
-          
-            
             <h1 className="home__title">
               <div className="home__name">Hi, I'm Vadim!</div>
               <div className="home__block">
@@ -75,9 +72,6 @@ function Home() {
               ))} */}
             </h1>
           </section>
-
-        // </main>
-
   );
 }
 

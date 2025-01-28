@@ -19,7 +19,7 @@
             padding: 0 12px;
         }
 
-        @media not all and (min-resolution: 0.001dpcm) {
+        // @media not all and (min-resolution: 0.001dpcm) {
             @supports (-webkit-appearance: none) {
                 @media only screen and (max-width: 545px) {
                     left: 50%;
@@ -27,7 +27,7 @@
                     width: 100%;
                 }
             }
-        }        
+        // }        
 
         @-moz-document url-prefix() {
             @media only screen and (max-width: 545px) {
@@ -46,14 +46,14 @@
                     margin-right: 0px;
                 }
             }
-            @media not all and (min-resolution: 0.001dpcm) {
+            // @media not all and (min-resolution: 0.001dpcm) {
                 @supports (-webkit-appearance: none) {
                     margin-right: 18px;
                     @media only screen and (max-width: 545px) {
                         margin-right: 0px;
                     }
                 }
-            }        
+            // }        
         }
     }
     &__name {
@@ -63,13 +63,13 @@
                 text-align: center;
             }    
         }
-        @media not all and (min-resolution: 0.001dpcm) {
+        // @media not all and (min-resolution: 0.001dpcm) {
             @supports (-webkit-appearance: none) {
                 @media only screen and (max-width: 545px) {
                     text-align: center;
                 }  
             }
-        }     
+        // }     
     }
 
     &__block {
@@ -80,7 +80,7 @@
                 flex-direction: column;
             }
         }
-        @media not all and (min-resolution: 0.001dpcm) {
+        // @media not all and (min-resolution: 0.001dpcm) {
             @supports (-webkit-appearance: none) {
                 display: flex;
                 align-items: center;
@@ -88,7 +88,7 @@
                     flex-direction: column;
                 }
             }
-        }   
+        // }   
     }
 
     &__text {
@@ -149,11 +149,11 @@
             @-moz-document url-prefix() {
                 padding: 5px 10px;
             }
-            @media not all and (min-resolution: 0.001dpcm) {
+            // @media not all and (min-resolution: 0.001dpcm) {
                 @supports (-webkit-appearance: none) {
                     padding: 5px 10px;
                 }
-            }   
+            // }   
         }
 
       
