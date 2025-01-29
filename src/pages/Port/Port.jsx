@@ -45,8 +45,13 @@ const Port = () => {
                             return (
                                 <div className="port__slide" key={item.id} style={{ '--img': `url(${item.image})` }}>
                                     <div className="port__content" >
-                                        <span>{item.title}</span>
+                                        <span className='port__name'>{item.title}</span>
                                         <p>{item.description}</p>
+                                        <a href={item.link} rel="noreferrer" className="port__link">
+                                            <span>
+                                            Link
+                                            </span>
+                                            </a>
                                     </div>
                                 </div>
                             )

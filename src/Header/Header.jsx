@@ -15,7 +15,7 @@ const Header = () => {
         {href: "about", lebel: "About"},
         {href: "skills", lebel: "My Skills"},
         {href: "portfolio", lebel: "Portfolio"},
-        // {href: "port", lebel: "Port"},
+        {href: "port", lebel: "Port"},
         {href: "contact", lebel: "Contact"}
     ]
 
