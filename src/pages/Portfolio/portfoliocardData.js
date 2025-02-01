@@ -1,158 +1,153 @@
+import fogex from "../../images/portfolio/big/fogex.png";
+import fogexmob from "../../images/portfolio/mob/fogex.png";
+import wood from "../../images/portfolio/big/wood.png";
+import woodmob from "../../images/portfolio/mob/wood.png";
+import ringo from "../../images/portfolio/big/ringo.png";
+import ringomob from "../../images/portfolio/mob/ringo.png";
+import ck from "../../images/portfolio/big/ck.png";
+import ckmob from "../../images/portfolio/mob/ck.png";
+import dreams from "../../images/portfolio/big/dreams.png";
+import dreamsmob from "../../images/portfolio/mob/dreams.png";
+import wawe from "../../images/portfolio/big/wawe.png";
+import wawemob from "../../images/portfolio/mob/wawe.png";
+// import oral from "../../images/portfolio/big/oral.png";
+import boon from "../../images/portfolio/big/boon.png";
+import boonmob from "../../images/portfolio/mob/boon.png";
+import arron from "../../images/portfolio/big/arron.png";
+import arronmob from "../../images/portfolio/mob/arron.png";
+import glee from "../../images/portfolio/big/glee.png";
+import gleemob from "../../images/portfolio/mob/glee.png";
+import desing from "../../images/portfolio/big/desing.png";
+import desingmob from "../../images/portfolio/mob/desing.png";
+import thrones from "../../images/portfolio/big/thrones.png";
+import thronesmob from "../../images/portfolio/mob/thrones.png";
+import shop from "../../images/portfolio/big/shop.png";
+import shopmob from "../../images/portfolio/mob/shop.png";
+import editor from "../../images/portfolio/big/editor.png";
+import editormob from "../../images/portfolio/mob/editor.png";
+import contact from "../../images/portfolio/big/contact.png";
+import contactmob from "../../images/portfolio/mob/contact.png";
 
-import oral from '../../images/portfolio/oral.png';
-import oralwebp from '../../images/portfolio/webp/oral.webp';
-import desing from '../../images/portfolio/desing.jpg';
-import desingwebp from '../../images/portfolio/webp/desing.webp';
-import boon from '../../images/portfolio/boon.png';
-import boonwebp from '../../images/portfolio/webp/boon.webp';
-import arron from '../../images/portfolio/arron.png';
-import arronwebp from '../../images/portfolio/webp/arron.webp';
-import glee from '../../images/portfolio/glee.jpg';
-import gleewebp from '../../images/portfolio/webp/glee.webp';
-import ck from '../../images/portfolio/ck.jpg';
-import ckwebp from '../../images/portfolio/webp/ck.webp';
-import dreams from '../../images/portfolio/dreams.jpg';
-import dreamswebp from '../../images/portfolio/webp/dreams.webp';
-import wawe from '../../images/portfolio/wawe.png';
-import wawewebp from '../../images/portfolio/webp/wawe.webp';
-import wood from '../../images/portfolio/wood.png';
-import woodwebp from '../../images/portfolio/webp/wood.webp';
-import ringo from '../../images/portfolio/ringo.png';
-import ringowebp from '../../images/portfolio/webp/ringo.webp';
-import fogex from '../../images/portfolio/fogex.png';
-import fogexwebp from '../../images/portfolio/webp/fogex.webp';
-// import branding from '../../images/portfolio/branding.jpg';
-import thrones from '../../images/portfolio/thrones.png';
-// import air from '../../images/portfolio/air.png';
-import shop from '../../images/portfolio/shop.png';
-import editor from '../../images/portfolio/editor.png';
-import contact from '../../images/portfolio/contact.png';
+export const portfolioCardData = [
+  // {
+  //   id: 0,
+  //   image: oral,
+  //   title: "Auraglow",
+  //   description: "Bootstrap / Html / Css / Js",
+  //   link: "https://kulman90vadik.github.io/auraglow/",
+  // },
+  {
+    id: 1,
+    image: contact,
+    mob: contactmob,
+    title: "Mini Contact App",
+    description: "React, TanStack Query, Typescript",
+    link: "https://contact-app-iota-taupe.vercel.app/",
+  },
+  {
+    id: 2,
+    image: shop,
+    mob: shopmob,
+    title: "Welcome to GreenShop",
+    description: "React, Redux Toolkit, Typescript",
+    link: "https://green-vite.vercel.app/",
+  },
 
-const portfoliocardData = [
-    {
-        id: 17,
-        image: contact,
-        title: 'Mini Contact App',
-        description: 'React, TanStack Query, Typescript',
-        link : 'https://contact-app-iota-taupe.vercel.app/'
-    },
-    {
-        id: 16,
-        image: shop,
-        title: 'Welcome to GreenShop',
-        description: 'React, Redux Toolkit, Typescript',
-        link : 'https://green-vite.vercel.app/'
-    },
-    {
-        id: 15,
-        image: editor,
-        title: 'Text Editor',
-        description: 'React, Typescript',
-        link : 'https://editor-ochre.vercel.app/'
-    },
-    {
-        id: 14,
-        image: thrones,
-        title: 'Game of Thrones',
-        description: 'React, Redux Toolkit',
-        link : 'https://react-throne.vercel.app/'
-    },
-    // {
-    //     id: 13,
-    //     image: branding,
-    //     title: 'Branding Workshop',
-    //     description: 'React, Redux Toolkit, Typescript',
-    //     link : 'https://branding-nine.vercel.app/'
-    // },
-    {
-        id: 2,
-        image: oral,
-        imagewebp: oralwebp,
-        title: 'Auraglow',
-        description: 'Bootstrap',
-        link : 'https://kulman90vadik.github.io/auraglow/'
-    },
-    {
-        id: 3,
-        image: desing,
-        imagewebp: desingwebp,
-        title: 'Deluxe House',
-        description: 'Html / Css / Js',
-        link : 'https://kulman90vadik.github.io/desing-dev/'
-    },
-    {
-        id: 4,
-        image: boon,
-        imagewebp: boonwebp,
-        title: 'Floristman',
-        description: 'Html / Css / Js',
-        link : 'https://kulman90vadik.github.io/boon/'
-    },
-    {
-        id: 5,
-        image: arron,
-        imagewebp: arronwebp,
-        title: 'Arron service center',
-        description: 'Html / Css / Js',
-        link : 'https://kulman90vadik.github.io/arron/'
-    },
-    {
-        id: 6,
-        image: glee,
-        imagewebp: gleewebp,
-        title: 'Glee',
-        description: 'Html / Css / Js',
-        link : 'https://kulman90vadik.github.io/gleee/'
-    },
-    {
-        id: 7,
-        image: ck,
-        imagewebp: ckwebp,
-        title: 'Infrastructure',
-        description: 'Html / Css / Js',
-        link : 'https://kulman90vadik.github.io/ck/'
-    },
-    {
-        id: 8,
-        image: dreams,
-        imagewebp: dreamswebp,
-        title: 'Dreams',
-        description: 'Html / Css / Js',
-        link : 'https://kulman90vadik.github.io/dreamss/'
-    },
-    {
-        id: 9,
-        image: wawe,
-        imagewebp: wawewebp,
-        title: 'Wawe',
-        description: 'Html / Css / Js',
-        link : 'https://kulman90vadik.github.io/my-wawe/'
-    },
-    {
-        id: 10,
-        image: wood,
-        imagewebp: woodwebp,
-        title: 'Wood Craft Studio',
-        description: 'Html / Css / Js',
-        link : 'https://kulman90vadik.github.io/woodCraft/'
-    },
-    {
-        id: 11,
-        image: ringo,
-        imagewebp: ringowebp,
-        title: 'Ringo',
-        description: 'Html / Css / Js',
-        link : 'https://kulman90vadik.github.io/ringo/'
-    },
-    {
-        id: 12,
-        image: fogex,
-        imagewebp: fogexwebp,
-        title: 'Fogex',
-        description: 'Html / Css / Js',
-        link : 'https://kulman90vadik.github.io/fogex/'
-    },
+  {
+    id: 3,
+    image: editor,
+    mob: editormob,
+    title: "Text Editor",
+    description: "React, Typescript",
+    link: "https://editor-ochre.vercel.app/",
+  },
+  {
+    id: 4,
+    image: thrones,
+    mob: thronesmob,
+    title: "Game of Thrones",
+    description: "React, Redux Toolkit",
+    link: "https://react-throne.vercel.app/",
+  },
+  {
+    id: 5,
+    image: wood,
+    mob: woodmob,
+    title: "Wood Craft Studio",
+    description: "Html / Css / Js",
+    link: "https://kulman90vadik.github.io/woodCraft/",
+  },
+  {
+    id: 6,
+    image: ringo,
+    mob: ringomob,
+    title: "Ringo",
+    description: "Html / Css / Js",
+    link: "https://kulman90vadik.github.io/ringo/",
+  },
+  {
+    id: 7,
+    image: fogex,
+    mob: fogexmob,
+    title: "Fogex",
+    description: "Html / Css / Js",
+    link: "https://kulman90vadik.github.io/fogex/",
+  },
+  {
+    id: 8,
+    image: ck,
+    mob: ckmob,
+    title: "Infrastructure",
+    description: "Html / Css / Js",
+    link: "https://kulman90vadik.github.io/ck/",
+  },
+  {
+    id: 9,
+    image: dreams,
+    mob: dreamsmob,
+    title: "Dreams",
+    description: "Html / Css / Js",
+    link: "https://kulman90vadik.github.io/dreamss/",
+  },
+  {
+    id: 10,
+    image: boon,
+    mob: boonmob,
+    title: "Floristman",
+    description: "Html / Css / Js",
+    link: "https://kulman90vadik.github.io/boon/",
+  },
 
-]
-
-export default portfoliocardData;
+  {
+    id: 11,
+    image: glee,
+    mob: gleemob,
+    title: "Glee",
+    description: "Html / Css / Js",
+    link: "https://kulman90vadik.github.io/gleee/",
+  },
+  {
+    id: 12,
+    image: arron,
+    mob: arronmob,
+    title: "Arron service center",
+    description: "Html / Css / Js",
+    link: "https://kulman90vadik.github.io/arron/",
+  },
+  {
+    id: 13,
+    image: wawe,
+    mob: wawemob,
+    title: "Wawe",
+    description: "Html / Css / Js",
+    link: "https://kulman90vadik.github.io/my-wawe/",
+  },
+  {
+    id: 14,
+    image: desing,
+    mob: desingmob,
+    title: "Desing",
+    description: "Html / Css / Js",
+    link: "https://kulman90vadik.github.io/desing-dev/",
+  },
+];

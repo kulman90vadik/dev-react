@@ -7,8 +7,10 @@ const skillscardData = [
         number: 87,
         description: 'React',
         list: [
+            'Node.js, MongoDb, Express.js',
             'Zustand, Redux Toolkit',
             'TanStack Query, Redux Toolkit',
+            'useOptimistic, useTransition',
             'useState, useEffect',
             'useRef, useContext, useCallback',
             "React Router Dom",
