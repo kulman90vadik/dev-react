@@ -28,7 +28,7 @@
 // import editor from '../../images/portfolio/editor.png';
 // import contact from '../../images/portfolio/contact.png';
 
-// const portfoliocardData = [
+// const data = [
 //     {
 //         id: 17,
 //         image: contact,
@@ -155,4 +155,4 @@
 
 // ]
 
-// export default portfoliocardData;
+// export default data;

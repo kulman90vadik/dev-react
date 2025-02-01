@@ -1,7 +1,7 @@
 // import './portfolio.scss';
 
 // import PortfolioCard from './PortfolioCard';
-// // import portfoliocardData from "./portfoliocardData";
+// // import data from "./data";
 
 // const Portfolio = () => {
 
@@ -10,7 +10,7 @@
 //             <h2 className="visually-hidden">portfolio with my work</h2>
 //             <div className="portfolio__container">
 
-//                 {portfoliocardData.map(item => <PortfolioCard item={item} key={item.id} />)}
+//                 {data.map(item => <PortfolioCard item={item} key={item.id} />)}
 
 //             </div>
 //         </section>

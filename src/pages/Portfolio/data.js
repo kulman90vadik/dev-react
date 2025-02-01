@@ -28,7 +28,7 @@ import editormob from "../../images/portfolio/mob/editor.png";
 import contact from "../../images/portfolio/big/contact.png";
 import contactmob from "../../images/portfolio/mob/contact.png";
 
-export const portfolioCardData = [
+export const data = [
   // {
   //   id: 0,
   //   image: oral,
