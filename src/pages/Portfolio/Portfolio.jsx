@@ -1,7 +1,7 @@
 
 import './port.scss';
 import React from 'react';
-import { portfolioCardData } from './portfolioCardData';
+import {portfolioCardData} from './portfolioCardData';
 
 const Portfolio = () => {
     const sliderRef = React.useRef(null);
