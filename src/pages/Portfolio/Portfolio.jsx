@@ -1,7 +1,7 @@
 
 import './port.scss';
 import React from 'react';
-import {portfolioCardData} from './portfolioCardData.js';
+import {data} from './data.js';
 
 const Portfolio = () => {
     const sliderRef = React.useRef(null);
@@ -41,7 +41,7 @@ const Portfolio = () => {
             <div className="port__container">
                 <div className="port__slider " ref={sliderRef}>
                     {
-                        portfolioCardData.map((item, index) => {
+                        data.map((item, index) => {
                             return (
                                 <div className="port__slide" key={item.id} 
                                 style={{
