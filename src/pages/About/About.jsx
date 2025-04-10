@@ -22,7 +22,7 @@ const About = () => {
             <h3 className="about__head">It's me.</h3>
             <div className="about__text">
               <p>
-                I'm a Junior Front-End Developer.
+                I'm a Front-End Developer.
                 I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
               </p>
             </div>
