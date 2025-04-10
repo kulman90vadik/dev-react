@@ -293,7 +293,7 @@
         opacity: 0;
         @media(max-width: 719px) {
             padding: 20px;
-            height: 145px;
+            height: 155px;
         }
         
 
@@ -303,6 +303,7 @@
             color: #ffffff;
             font-weight: 500;
             @media(max-width: 540px) {
+                margin-bottom: 7px;
                 font-size: 20px;
             }
         }
