@@ -3,7 +3,7 @@
     position: relative;
     overflow: hidden;
     &__container {
-        // height: 100vh;
+        height: 100vh;
         height: 100dvh;
         overflow: hidden;
         display: flex;
@@ -58,6 +58,16 @@
         @media(max-width: 554px) {
             background-image: var(--imgmob);
         }
+        &:nth-child(1) {
+            @media(max-width: 991px) {
+                z-index: 9!important;
+            }
+        }
+        // &:nth-child(2) {
+        //     .port__content {
+        //         z-index: -1!important;
+        //     }
+        // }
         &:nth-child(1),
         &:nth-child(2) {
             position: absolute;
@@ -117,7 +127,7 @@
         &:nth-child(3) {
             left: calc(50% + 290px);
             background-size: cover;
-            // z-index: 11;
+            z-index: 11; //yyyyyyyyyyyyyyyyyy
             .port__link {
                 pointer-events: none;
             }
@@ -283,6 +293,7 @@
         opacity: 0;
         @media(max-width: 719px) {
             padding: 20px;
+            height: 145px;
         }
         
 
