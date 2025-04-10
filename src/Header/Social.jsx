@@ -1,7 +1,4 @@
 
-
-
-
 const Social = () => {
   return (
     <ul className="social" aria-label="in the form of icons with contacts">
@@ -15,16 +12,6 @@ const Social = () => {
           <i className="fa fa-github-square" aria-hidden="true"></i>
         </a>
       </li>
-      {/* <li className="social__item">
-                    <a
-                        className="social__link social__link--whatsapp"
-                        href="https://wa.me/+4917641167896?text=Hello."
-                        rel="noreferrer"
-                        aria-label="Ability to call on whatsapp"
-                    >
-                        <i className="fa fa-whatsapp" aria-hidden="true"></i>
-                    </a>
-                </li> */}
       <li className="social__item">
         <a
           className="social__link social__link--post"

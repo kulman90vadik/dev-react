@@ -3,7 +3,8 @@
     position: relative;
     overflow: hidden;
     &__container {
-        height: 100vh;
+        // height: 100vh;
+        height: 100dvh;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -290,6 +291,9 @@
             margin-bottom: 12px;
             color: #ffffff;
             font-weight: 500;
+            @media(max-width: 540px) {
+                font-size: 20px;
+            }
         }
     }
     &__name {
@@ -300,6 +304,9 @@
         font-weight: 700;
         @media(max-width: 719px) {
             font-size: 33px;
+        }
+        @media(max-width: 540px) {
+            font-size: 30px;
         }
     }
 

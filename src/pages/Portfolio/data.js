@@ -25,25 +25,34 @@ import shop from "../../images/portfolio/big/shop.png";
 import shopmob from "../../images/portfolio/mob/shop.png";
 import editor from "../../images/portfolio/big/editor.png";
 import editormob from "../../images/portfolio/mob/editor.png";
+
 import contact from "../../images/portfolio/big/contact.png";
 import contactmob from "../../images/portfolio/mob/contact.png";
 
+import kultur from "../../images/portfolio/big/kultur.png";
+import kulturmob from "../../images/portfolio/mob/kulturmob.png";
+
 export const data = [
-  // {
-  //   id: 0,
-  //   image: oral,
-  //   title: "Auraglow",
-  //   description: "Bootstrap / Html / Css / Js",
-  //   link: "https://kulman90vadik.github.io/auraglow/",
-  // },
+  {
+    id: 5,
+    image: wood,
+    mob: woodmob,
+    title: "Wood Craft Studio",
+    description: "Html / Css / JavaScript",
+    link: "https://kulman90vadik.github.io/woodCraft/",
+  },
+
+
   {
     id: 1,
-    image: contact,
-    mob: contactmob,
-    title: "Mini Contact App",
-    description: "React, TanStack Query, Typescript",
-    link: "https://contact-app-iota-taupe.vercel.app/",
+    image: kultur,
+    mob: kulturmob,
+    title: "Initiative Kulturgut Mobilität",
+    description: "WordPress / Html / Css / JavaScript",
+    link: "https://kulturgut-mobilitaet.de/",
   },
+
+
   {
     id: 2,
     image: shop,
@@ -52,7 +61,14 @@ export const data = [
     description: "React, Redux Toolkit, Typescript",
     link: "https://green-vite.vercel.app/",
   },
-
+  {
+    id: 15,
+    image: contact,
+    mob: contactmob,
+    title: "Mini Contact App",
+    description: "React, TanStack Query, Typescript",
+    link: "https://contact-app-iota-taupe.vercel.app/",
+  },
   {
     id: 3,
     image: editor,
@@ -69,20 +85,13 @@ export const data = [
     description: "React, Redux Toolkit",
     link: "https://react-throne.vercel.app/",
   },
-  {
-    id: 5,
-    image: wood,
-    mob: woodmob,
-    title: "Wood Craft Studio",
-    description: "Html / Css / Js",
-    link: "https://kulman90vadik.github.io/woodCraft/",
-  },
+
   {
     id: 6,
     image: ringo,
     mob: ringomob,
     title: "Ringo",
-    description: "Html / Css / Js",
+    description: "Html / Css / JavaScript",
     link: "https://kulman90vadik.github.io/ringo/",
   },
   {
@@ -90,7 +99,7 @@ export const data = [
     image: fogex,
     mob: fogexmob,
     title: "Fogex",
-    description: "Html / Css / Js",
+    description: "Html / Css / JavaScript",
     link: "https://kulman90vadik.github.io/fogex/",
   },
   {
@@ -98,7 +107,7 @@ export const data = [
     image: ck,
     mob: ckmob,
     title: "Infrastructure",
-    description: "Html / Css / Js",
+    description: "Html / Css / JavaScript",
     link: "https://kulman90vadik.github.io/ck/",
   },
   {
@@ -106,7 +115,7 @@ export const data = [
     image: dreams,
     mob: dreamsmob,
     title: "Dreams",
-    description: "Html / Css / Js",
+    description: "Html / Css / JavaScript",
     link: "https://kulman90vadik.github.io/dreamss/",
   },
   {
@@ -114,7 +123,7 @@ export const data = [
     image: boon,
     mob: boonmob,
     title: "Floristman",
-    description: "Html / Css / Js",
+    description: "Html / Css / JavaScript",
     link: "https://kulman90vadik.github.io/boon/",
   },
 
@@ -123,7 +132,7 @@ export const data = [
     image: glee,
     mob: gleemob,
     title: "Glee",
-    description: "Html / Css / Js",
+    description: "Html / Css / JavaScript",
     link: "https://kulman90vadik.github.io/gleee/",
   },
   {
@@ -131,7 +140,7 @@ export const data = [
     image: arron,
     mob: arronmob,
     title: "Arron service center",
-    description: "Html / Css / Js",
+    description: "Html / Css / JavaScript",
     link: "https://kulman90vadik.github.io/arron/",
   },
   {
@@ -139,7 +148,7 @@ export const data = [
     image: wawe,
     mob: wawemob,
     title: "Wawe",
-    description: "Html / Css / Js",
+    description: "Html / Css / JavaScript",
     link: "https://kulman90vadik.github.io/my-wawe/",
   },
   {
@@ -147,7 +156,7 @@ export const data = [
     image: desing,
     mob: desingmob,
     title: "Desing",
-    description: "Html / Css / Js",
+    description: "Html / Css / JavaScript",
     link: "https://kulman90vadik.github.io/desing-dev/",
   },
 ];
