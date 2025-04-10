@@ -127,7 +127,7 @@
         &:nth-child(3) {
             left: calc(50% + 290px);
             background-size: cover;
-            z-index: 11; //yyyyyyyyyyyyyyyyyy
+            // z-index: 11; //yyyyyyyyyyyyyyyyyy
             .port__link {
                 pointer-events: none;
             }
@@ -293,9 +293,18 @@
         opacity: 0;
         @media(max-width: 719px) {
             padding: 20px;
-            height: 155px;
+            // height: 155px;
         }
         
+
+
+
+
+
+
+
+
+
 
         p {
             font-size: 25px;
