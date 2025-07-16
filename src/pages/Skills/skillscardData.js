@@ -127,7 +127,7 @@ const skillscardData = [
         id: 10,
         color: 'orange',
         number: 80,
-        description: 'WordPress TYPO3',
+        description: 'WordPress',
         list: [
             'heme and plugin installation',
             'Web design: UX, UI, site architecture',
